@@ -1,0 +1,24 @@
+
+article.informe {
+  width: 100%;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+}
+
+article.informe > header {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+article.informe > header > .icono {
+  cursor: pointer;
+}
+
+article.informe > section {
+  margin-top: .5rem;
+  padding: 0 1rem;
+}

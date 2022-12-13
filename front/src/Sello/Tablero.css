@@ -1,0 +1,42 @@
+
+.tablero.Sello {
+  grid-auto-flow: column !important;
+  grid-gap: .5rem;
+  border-radius: 20%;
+  margin: 1rem auto;
+}
+
+.tablero.Sello {
+  grid: repeat(4,1fr) / repeat(5,1fr);   
+}
+
+.tablero.Sello > .posicion {
+  padding: .25rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.tablero.Sello > .posicion:hover {
+  background-color: var(--tra_vio) !important;
+}
+
+.tablero.Sello > .posicion > .imagen {
+  min-width: 3rem;
+  height: 3rem;
+  margin: .5rem;
+}
+
+
+@media ( max-width: 450px ){
+
+  .tablero.Sello > .posicion > .imagen {
+    min-width: 2rem; 
+    height: 2rem;
+    margin: .25rem;
+  }
+  .tablero.Sello > .posicion > .tex {
+    display: none;
+  }
+}
+

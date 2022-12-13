@@ -1,0 +1,46 @@
+/* 
+  Iconos
+*/
+@font-face {
+  font-family: 'Material Icons Outlined';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./Icono.woff2") format('woff2');
+}
+
+/* estilo principal */
+.icono {
+  font-family: 'Material Icons Outlined';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  /* propios */
+  font-size: 1.5rem;
+  text-decoration: none;  
+  color: var(--let_ico) !important;
+  background-color: var(--col_tra);
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+/* tamaaños */
+.icono.tam-0 { font-size: .5rem; }
+.icono.tam-1 { font-size: 1rem; }
+.icono.tam-2 { font-size: 1.25rem; }
+.icono.tam-3 { font-size: 1.5rem; }
+.icono.tam-4 { font-size: 1.75rem; }
+.icono.tam-5 { font-size: 2rem; }
+.icono.tam-6 { font-size: 2.25rem; }
+.icono.tam-7 { font-size: 2.5rem; }
+
+.icono:is([href],[onclick]):hover {
+  text-shadow: 0 0 5px;
+}

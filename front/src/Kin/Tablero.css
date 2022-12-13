@@ -1,0 +1,41 @@
+
+.tablero.Kin {
+  grid: repeat(20,1fr)/repeat(13,1fr); 
+  grid-auto-flow: column;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: .9rem;
+}
+
+.tablero.Kin > :is(.seccion,.posicion) {
+  width: 1.9rem; 
+  height: 1.9rem;
+}
+
+@media ( max-width: 450px ){
+
+  .tablero.Kin > :is(.seccion,.posicion) {
+    width: 1.4rem; 
+    height: 1.4rem;
+  }
+  .tablero.Kin > .posicion > .num.id {
+    font-size: .5rem;
+  }
+}
+
+.tablero.Kin .posicion { 
+  border: 1px solid green;
+  cursor: pointer;
+}
+
+.tablero.Kin .posicion > p {
+  font-size: .6rem;
+}
+
+.tablero.Kin > .posicion:hover {
+  background-color: var(--tra_vio) !important;
+}
+
+.tablero.Kin .posicion.portal {
+  background-color: green;
+}

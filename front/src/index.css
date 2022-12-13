@@ -1,0 +1,212 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora');
+
+:root { 
+  /* fondos */
+  --fon_win:rgba(015, 015, 015, 1);
+  --fon_sec:rgba(015, 015, 015, .9);
+  --fon_art:rgba(015, 015, 015, .6);
+  --fon_nav:rgba(020, 005, 005, .3);
+  --fon_foc:rgba(049, 134, 245, .3);
+  --fon_sel:rgba(130, 167, 216, .6);
+  /* Bordes */
+  --bor_val:rgb(080, 125, 188);
+  --bor_sel:rgb(005, 031, 068);
+  --bor_dat:rgb(116, 066, 200);
+  /* letras */
+  --let_ico:#ccc0b0;
+  --let_ide:#779adc;
+  --let_val:#cd5de9;
+  --let_err:#ff0000;
+  --let_num:#7fff00;
+  --let_tex:#dfda4c;
+  --let_ope:#b8860b;
+  --let_lis:#00eeff;
+  --let_obj:#001aff;
+  /* colores sólidos */    
+  --col_tra:rgba(0,0,0,0);      
+  --col_bla:#ffffff;
+  --col_neg:rgb(000,000,000);
+  --col_gri:rgb(125,125,125);
+  --col_roj:rgb(252,040,071);
+  --col_ros:rgb(251,124,253);
+  --col_ama:rgb(243,243,026);
+  --col_nar:rgb(255,163,067);
+  --col_mar:rgb(107,059,008);
+  --col_ver:rgb(007,189,025);
+  --col_azu:rgb(015,076,129);
+  --col_vio:rgb(116,066,200);
+  --col_cel:rgb(066,189,200);    
+  /* transparencias */  
+  --tra_bla:rgba(255,255,255,.7);
+  --tra_neg:rgba(000,000,000,.7);
+  --tra_gri:rgba(125,125,125,.7);
+  --tra_roj:rgba(252,040,071,.7);
+  --tra_ros:rgba(251,124,253,.7);
+  --tra_ama:rgba(243,243,026,.7);
+  --tra_nar:rgba(255,163,067,.7);
+  --tra_mar:rgba(107,059,008,.7);
+  --tra_ver:rgba(007,189,025,.7);
+  --tra_azu:rgba(015,076,129,.7);
+  --tra_vio:rgba(116,066,200,.7);
+  --tra_cel:rgba(066,189,200,.7);
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: 'Lora';
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background: center/cover no-repeat url('http://www.icpv.com.ar/img/app/fon/01.jpg');
+  color: var(--let_tex);  
+  margin: 0;
+}
+
+#root > header {
+  height: 10vh;
+  width: 100vw;
+  background-color: var(--fon_win);
+}
+
+#root > main {
+  height: 90vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media ( max-width: 450px ){
+  #root > main {
+    font-size: .9rem;
+  }
+}
+
+#root > main article {
+  max-width: 45rem;
+  background-color: var(--fon_sec);
+  margin-top: .5rem;
+  margin-left: .5rem;
+  margin-right: .5rem;  
+  padding: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 1px solid var(--bor_dat);
+  border-radius: .5rem;
+}
+
+#root p.carga {
+  padding: 2rem 3rem;
+  max-width: 25rem;
+  margin: auto;
+  background-color: var(--fon_art);
+  border: 3px dotted var(--bor_dat);
+  font-style: italic;
+}
+
+/* 
+Textos 
+*/
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+:is(article,section) > p {
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
+p.tit {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+}
+
+.tex-enf {
+  font-weight: bold;
+}
+.tex-cur {
+  font-style: italic;
+}
+.tex-luz {
+  text-shadow: 0 0 25px !important;
+}
+
+:is(p,b,i).sep {
+  margin-left: .1rem;
+  margin-right: .1rem;
+}
+:is(p,b,i).err {
+  color: var(--let_err);
+}
+:is(p,b,i).ide {
+  color: var(--let_ide);
+}
+:is(p,b,i).val {
+  color: var(--let_val);
+}
+:is(p,b,i).num {
+  color: var(--let_num);
+}
+:is(p,b,i).tex {
+  color: var(--let_tex);
+}
+:is(p,b,i).lis {
+  color: var(--let_lis);
+}
+
+cite {
+  font-style: italic;
+}
+q { 
+  quotes: "\"" "\"" "'" "'";
+}
+q::after, q::before {
+  color: var(--let_ope);
+  text-shadow: 0 0 5px;
+}
+
+/* 
+  Lista
+*/
+ul {
+  margin-bottom: .5rem;
+  text-align: left !important;
+}
+
+/* 
+  Controles
+*/
+input, button, textarea, select {
+  outline: none !important;
+}
+button {
+  background-color: transparent;
+  border: 0;
+  
+}
+button.form-control,
+button.form-control:focus {
+  background-color: rgba(128, 128, 128, 0.486);  
+  color: antiquewhite !important;
+  box-shadow: 0 0 5px;
+}
+button.form-control:focus {
+  border: none;
+}
+
+

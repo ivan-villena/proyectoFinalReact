@@ -1,0 +1,19 @@
+
+.ficha {
+  margin-top: 1rem;
+}
+
+.ficha > .detalle {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.ficha > .detalle > ul {
+  margin-bottom: 0;
+}
+
+.ficha > div {
+  margin: 1rem auto;
+}

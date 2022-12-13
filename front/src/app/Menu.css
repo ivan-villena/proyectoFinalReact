@@ -1,0 +1,26 @@
+
+#root > header .navbar {
+  padding-top: 0;
+}
+
+#root > header .navbar a {
+  color: var(--let_tex) !important;
+}
+
+#root > header .navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+#root > header .navbar .navbar-toggler:not(.collapsed) {
+  text-shadow: 0 0 5px;
+}
+
+#root > header .navbar a:hover {
+  text-shadow: 0 0 5px;
+}
+
+#root > header #navbarSupportedContent {
+  background-color: var(--fon_win);
+  z-index: 999;
+  padding: 1rem;
+}

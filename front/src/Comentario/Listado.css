@@ -1,0 +1,10 @@
+
+
+ul.listado.Comentario li { 
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px dotted var(--bor_dat);
+  text-align: center;
+  box-shadow: 0 0 5px;
+}
